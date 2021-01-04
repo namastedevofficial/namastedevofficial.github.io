@@ -156,10 +156,30 @@ input.question:valid {
 
 input.question:focus + label > p,
 input.question:valid + label > p {
-  top: -70px;
+  top: -60px;
   font-size: 14px;
   color: #fff;
 }
+
+input.question:invalid + label > p {
+  top: -60px;
+  font-size: 14px;
+  color: #fff;
+}
+
+input.question:placeholder-shown + label>p {
+  top: -30px;
+  font-size: 18px;
+  color: #fff;
+}
+
+input.question:focus:placeholder-shown + label>p {
+  top: -60px;
+  font-size: 14px;
+  color: #fff;
+}
+
+
 
 input.question:valid + label,
 textarea.question:valid + label {
@@ -178,9 +198,9 @@ input.question + label > p {
   width: 100%;
   margin: 0;
   position: absolute;
-  color: #fefefe;
+  color: #fff;
   font-size: 18px;
-  top: -50px;
+  top: -30px;
   z-index: -1;
   -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
   transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
@@ -200,7 +220,9 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background: #EEE;
+  background: #797979;
+  color: #9b9b9b;
+  border: none;
 }
 
 input[type="submit"]:active {
@@ -211,6 +233,7 @@ input.question:valid ~ .submit-btn > input[type="submit"], textarea.question:val
   -webkit-animation: appear 1s forwards;
   animation: appear 1s forwards;
   background-color: #4fb8b9;
+  color: #fff;
 }
 
 input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input[type="submit"] {
