@@ -65,23 +65,27 @@ canvas {
   opacity: 0.9;
   margin: 100px 0 10px 0;
   color: #fff;
+  margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sm-icon-insta {
   margin-right: 15px;
-  width: 30px;
+  width: 32px;
   opacity: 0.7;
 }
 
 .sm-icon-youtube {
   opacity: 0.7;
   margin-right: 15px;
-  width: 30px;
+  width: 32px;
 }
 
 .sm-icon-linkedin {
   opacity: 0.7;
-  width: 30px;
+  width: 32px;
 }
 
 .email-form {
@@ -222,11 +226,11 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: #797979;
   color: #9b9b9b;
-  border: none;
+  border: 1px solid #797979;
 }
 
 input[type="submit"]:active {
-  background: #999;
+  background: #797979;
 }
 
 input.question:valid ~ .submit-btn > input[type="submit"], textarea.question:valid ~ input[type="submit"] {
