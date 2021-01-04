@@ -90,9 +90,8 @@ canvas {
 
 .email-form {
   margin: 100px auto 0 auto;
-  width:400px;
+  width:350px;
 }
-
 
 input,
 span,p,
@@ -237,6 +236,7 @@ input.question:valid ~ .submit-btn > input[type="submit"], textarea.question:val
   -webkit-animation: appear 1s forwards;
   animation: appear 1s forwards;
   background-color: #4fb8b9;
+  border: 1px solid #4fb8b9;
   color: #fff;
 }
 
