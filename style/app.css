@@ -86,7 +86,7 @@ canvas {
 
 .email-form {
   margin: 120px auto 0 auto;
-  width:350px;
+  width:100%;
 }
 
 input,
@@ -446,6 +446,13 @@ h1:nth-child(3) {
   100% {
     transform: none;
     opacity: 0.25;
+  }
+}
+
+
+@media (max-width:350px) {
+  .social-media {
+    margin-top: 50px;
   }
 }
 
