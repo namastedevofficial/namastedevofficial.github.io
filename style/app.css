@@ -470,5 +470,8 @@ h1:nth-child(3) {
   .social-media {
     margin-top: 50px;
   }
+  .email-form {
+    margin-top: 60px;
+  }
 }
 
