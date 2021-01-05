@@ -3,6 +3,16 @@
   src: url('../fonts/OratorStd.otf');
 }
 
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
+}
+
 html,
 body {
   width: 100%;
