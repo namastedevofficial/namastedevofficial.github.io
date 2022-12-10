@@ -43,6 +43,21 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-M30S6C1VTH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-M30S6C1VTH");
+    </script>
   </head>
 
   <body>
@@ -74,7 +89,8 @@
             <li>
               <a
                 class="getstarted scrollto"
-                href="https://learn.namastedev.com/single-checkout/6389e7a3e4b012dc9ad879ff?pid=p1"
+                onclick="clickHandler()"
+                style="cursor: pointer"
                 >Register</a
               >
             </li>
@@ -123,7 +139,8 @@
             <br /><br />
             <div data-aos="fade-up" data-aos-delay="800">
               <a
-                href="https://learn.namastedev.com/single-checkout/6389e7a3e4b012dc9ad879ff?pid=p1"
+                onclick="clickHandler()"
+                style="cursor: pointer"
                 class="btn-get-started scrollto"
                 >Register Now</a
               >
@@ -234,7 +251,8 @@
       <section id="Register" class="Register">
         <div class="row justify-content-center">
           <a
-            href="https://learn.namastedev.com/single-checkout/6389e7a3e4b012dc9ad879ff?pid=p1"
+            onclick="clickHandler()"
+            style="cursor: pointer"
             class="btn btn-lg btn-primary col-lg-6"
             role="button"
             >Register Now</a
@@ -406,7 +424,8 @@
       <section id="Register" class="Register">
         <div class="row justify-content-center">
           <a
-            href="https://learn.namastedev.com/single-checkout/6389e7a3e4b012dc9ad879ff?pid=p1"
+            onclick="clickHandler()"
+            style="cursor: pointer"
             class="btn btn-lg btn-primary col-lg-6"
             role="button"
             >Register Now</a
@@ -616,7 +635,8 @@
       <section id="Register" class="Register">
         <div class="row justify-content-center">
           <a
-            href="https://learn.namastedev.com/single-checkout/6389e7a3e4b012dc9ad879ff?pid=p1"
+            onclick="clickHandler()"
+            style="cursor: pointer"
             class="btn btn-lg btn-primary col-lg-6"
             role="button"
             >Register Now</a
@@ -660,7 +680,8 @@
 
                 <div class="btn-wrap">
                   <a
-                    href="https://learn.namastedev.com/single-checkout/6389e7a3e4b012dc9ad879ff?pid=p1"
+                    onclick="clickHandler()"
+                    style="cursor: pointer"
                     class="btn-buy"
                     >Buy Now</a
                   >
@@ -921,7 +942,8 @@
       <section id="Register" class="Register">
         <div class="row justify-content-center">
           <a
-            href="https://learn.namastedev.com/single-checkout/6389e7a3e4b012dc9ad879ff?pid=p1"
+            onclick="clickHandler()"
+            style="cursor: pointer"
             class="btn btn-lg btn-primary col-lg-6"
             role="button"
             >Register Now</a
@@ -963,5 +985,26 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-737601697/_YFTCPyt4oQYEKHR298C",
+          event_callback: callback,
+        });
+        return false;
+      }
+
+      function clickHandler() {
+        gtag_report_conversion();
+        window.location.href =
+          "https://learn.namastedev.com/single-checkout/6389e7a3e4b012dc9ad879ff?pid=p1";
+      }
+    </script>
   </body>
 </html>
