@@ -1,0 +1,676 @@
+@font-face {
+  font-family: remixicon;
+  src: url(https://namastedev.com/namaste-react/assets/vendor/remixicon/remixicon.eot?t=1590207869815);
+  src: url(https://namastedev.com/namaste-react/assets/vendor/remixicon/remixicon.eot?t=1590207869815#iefix) format('embedded-opentype'), url(https://namastedev.com/namaste-react/assets/vendor/remixicon/remixicon.woff2?t=1590207869815) format("woff2"), url(https://namastedev.com/namaste-react/assets/vendor/remixicon/remixicon.woff?t=1590207869815) format("woff"), url(https://namastedev.com/namaste-react/assets/vendor/remixicon/remixicon.ttf?t=1590207869815) format('truetype'), url(https://namastedev.com/namaste-react/assets/vendor/remixicon/remixicon.svg?t=1590207869815#remixicon) format('svg');
+  font-display: swap
+}
+
+[class*=" ri-"],
+[class^=ri-] {
+  font-family: remixicon !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.ri-lg {
+  font-size: 1.3333em;
+  line-height: .75em;
+  vertical-align: -.0667em
+}
+
+.ri-1x {
+  font-size: 1em
+}
+
+.ri-2x {
+  font-size: 2em
+}
+
+.ri-3x {
+  font-size: 3em
+}
+
+.ri-4x {
+  font-size: 4em
+}
+
+.ri-5x {
+  font-size: 5em
+}
+
+.ri-6x {
+  font-size: 6em
+}
+
+.ri-7x {
+  font-size: 7em
+}
+
+.ri-8x {
+  font-size: 8em
+}
+
+.ri-9x {
+  font-size: 9em
+}
+
+.ri-10x {
+  font-size: 10em
+}
+
+.ri-24-hours-line:before {
+  content: "\ea02"
+}
+
+.ri-4k-line:before {
+  content: "\ea04"
+}
+
+.ri-a-b:before {
+  content: "\ea05"
+}
+
+.ri-align-center:before {
+  content: "\ea25"
+}
+
+.ri-align-justify:before {
+  content: "\ea26"
+}
+
+.ri-align-left:before {
+  content: "\ea27"
+}
+
+.ri-align-right:before {
+  content: "\ea28"
+}
+
+.ri-align-top:before {
+  content: "\ea29"
+}
+
+.ri-anchor-line:before {
+  content: "\ea30"
+}
+
+.ri-app-store-line:before {
+  content: "\ea3e"
+}
+
+.ri-apps-2-line:before {
+  content: "\ea42"
+}
+
+.ri-apps-line:before {
+  content: "\ea44"
+}
+
+.ri-arrow-down-line:before {
+  content: "\ea4c"
+}
+
+.ri-arrow-down-s-line:before {
+  content: "\ea4e"
+}
+
+.ri-arrow-drop-down-line:before {
+  content: "\ea50"
+}
+
+.ri-arrow-drop-left-line:before {
+  content: "\ea52"
+}
+
+.ri-arrow-drop-right-line:before {
+  content: "\ea54"
+}
+
+.ri-arrow-drop-up-line:before {
+  content: "\ea56"
+}
+
+.ri-arrow-go-back-line:before {
+  content: "\ea58"
+}
+
+.ri-arrow-left-down-line:before {
+  content: "\ea5e"
+}
+
+.ri-arrow-left-line:before {
+  content: "\ea60"
+}
+
+.ri-arrow-left-right-line:before {
+  content: "\ea62"
+}
+
+.ri-arrow-left-s-line:before {
+  content: "\ea64"
+}
+
+.ri-arrow-left-up-line:before {
+  content: "\ea66"
+}
+
+.ri-arrow-right-down-line:before {
+  content: "\ea6a"
+}
+
+.ri-arrow-right-line:before {
+  content: "\ea6c"
+}
+
+.ri-arrow-right-s-line:before {
+  content: "\ea6e"
+}
+
+.ri-arrow-right-up-line:before {
+  content: "\ea70"
+}
+
+.ri-arrow-up-down-line:before {
+  content: "\ea74"
+}
+
+.ri-arrow-up-line:before {
+  content: "\ea76"
+}
+
+.ri-arrow-up-s-line:before {
+  content: "\ea78"
+}
+
+.ri-at-line:before {
+  content: "\ea83"
+}
+
+.ri-bar-chart-2-line:before {
+  content: "\ea96"
+}
+
+.ri-bar-chart-box-line:before {
+  content: "\ea98"
+}
+
+.ri-bar-chart-line:before {
+  content: "\ea9e"
+}
+
+.ri-base-station-line:before {
+  content: "\eaa6"
+}
+
+.ri-brush-2-line:before {
+  content: "\eafb"
+}
+
+.ri-brush-3-line:before {
+  content: "\eafd"
+}
+
+.ri-brush-4-line:before {
+  content: "\eaff"
+}
+
+.ri-brush-line:before {
+  content: "\eb01"
+}
+
+.ri-building-2-line:before {
+  content: "\eb09"
+}
+
+.ri-building-3-line:before {
+  content: "\eb0b"
+}
+
+.ri-building-4-line:before {
+  content: "\eb0d"
+}
+
+.ri-building-line:before {
+  content: "\eb0f"
+}
+
+.ri-cake-2-line:before {
+  content: "\eb19"
+}
+
+.ri-cake-3-line:before {
+  content: "\eb1b"
+}
+
+.ri-cake-line:before {
+  content: "\eb1d"
+}
+
+.ri-calendar-2-line:before {
+  content: "\eb21"
+}
+
+.ri-calendar-event-line:before {
+  content: "\eb25"
+}
+
+.ri-calendar-line:before {
+  content: "\eb27"
+}
+
+.ri-calendar-todo-line:before {
+  content: "\eb29"
+}
+
+.ri-code-box-line:before {
+  content: "\eba7"
+}
+
+.ri-code-line:before {
+  content: "\eba9"
+}
+
+.ri-code-s-line:before {
+  content: "\ebab"
+}
+
+.ri-community-line:before {
+  content: "\ebba"
+}
+
+.ri-copyright-line:before {
+  content: "\ebe2"
+}
+
+.ri-css3-line:before {
+  content: "\ec04"
+}
+
+.ri-cursor-line:before {
+  content: "\ec0a"
+}
+
+.ri-database-2-line:before {
+  content: "\ec16"
+}
+
+.ri-database-line:before {
+  content: "\ec18"
+}
+
+.ri-device-line:before {
+  content: "\ec2e"
+}
+
+.ri-disc-line:before {
+  content: "\ec36"
+}
+
+.ri-drive-line:before {
+  content: "\ec66"
+}
+
+.ri-drop-line:before {
+  content: "\ec6a"
+}
+
+.ri-file-2-line:before {
+  content: "\ecc3"
+}
+
+.ri-file-3-line:before {
+  content: "\ecc5"
+}
+
+.ri-file-4-line:before {
+  content: "\ecc7"
+}
+
+.ri-file-chart-2-line:before {
+  content: "\eccb"
+}
+
+.ri-file-chart-line:before {
+  content: "\eccd"
+}
+
+.ri-file-code-line:before {
+  content: "\ecd1"
+}
+
+.ri-file-copy-2-line:before {
+  content: "\ecd3"
+}
+
+.ri-file-copy-line:before {
+  content: "\ecd5"
+}
+
+.ri-file-info-line:before {
+  content: "\ecea"
+}
+
+.ri-file-line:before {
+  content: "\eceb"
+}
+
+.ri-file-list-2-line:before {
+  content: "\eced"
+}
+
+.ri-file-list-3-line:before {
+  content: "\ecef"
+}
+
+.ri-file-list-line:before {
+  content: "\ecf1"
+}
+
+.ri-file-text-line:before {
+  content: "\ed0f"
+}
+
+.ri-fingerprint-2-line:before {
+  content: "\ed2f"
+}
+
+.ri-fingerprint-line:before {
+  content: "\ed31"
+}
+
+.ri-function-line:before {
+  content: "\ed9e"
+}
+
+.ri-global-line:before {
+  content: "\edcf"
+}
+
+.ri-google-line:before {
+  content: "\edd5"
+}
+
+.ri-gradienter-line:before {
+  content: "\eddd"
+}
+
+.ri-h-1:before {
+  content: "\ede6"
+}
+
+.ri-h-2:before {
+  content: "\ede7"
+}
+
+.ri-h-3:before {
+  content: "\ede8"
+}
+
+.ri-h-4:before {
+  content: "\ede9"
+}
+
+.ri-h-5:before {
+  content: "\edea"
+}
+
+.ri-h-6:before {
+  content: "\edeb"
+}
+
+.ri-home-2-line:before {
+  content: "\ee19"
+}
+
+.ri-home-3-line:before {
+  content: "\ee1b"
+}
+
+.ri-home-4-line:before {
+  content: "\ee1d"
+}
+
+.ri-home-5-line:before {
+  content: "\ee1f"
+}
+
+.ri-home-6-line:before {
+  content: "\ee21"
+}
+
+.ri-home-7-line:before {
+  content: "\ee23"
+}
+
+.ri-home-8-line:before {
+  content: "\ee25"
+}
+
+.ri-home-line:before {
+  content: "\ee2b"
+}
+
+.ri-html5-line:before {
+  content: "\ee41"
+}
+
+.ri-layout-2-line:before {
+  content: "\ee7f"
+}
+
+.ri-layout-3-line:before {
+  content: "\ee81"
+}
+
+.ri-layout-4-line:before {
+  content: "\ee83"
+}
+
+.ri-layout-5-line:before {
+  content: "\ee85"
+}
+
+.ri-layout-6-line:before {
+  content: "\ee87"
+}
+
+.ri-layout-column-line:before {
+  content: "\ee8d"
+}
+
+.ri-layout-left-2-line:before {
+  content: "\ee92"
+}
+
+.ri-layout-left-line:before {
+  content: "\ee94"
+}
+
+.ri-layout-line:before {
+  content: "\ee95"
+}
+
+.ri-layout-right-2-line:before {
+  content: "\ee99"
+}
+
+.ri-layout-right-line:before {
+  content: "\ee9b"
+}
+
+.ri-layout-row-line:before {
+  content: "\ee9d"
+}
+
+.ri-layout-top-2-line:before {
+  content: "\ee9f"
+}
+
+.ri-layout-top-line:before {
+  content: "\eea1"
+}
+
+.ri-line-chart-line:before {
+  content: "\eeab"
+}
+
+.ri-line-line:before {
+  content: "\eeae"
+}
+
+.ri-link-m:before {
+  content: "\eeaf"
+}
+
+.ri-link:before {
+  content: "\eeb2"
+}
+
+.ri-linkedin-box-line:before {
+  content: "\eeb4"
+}
+
+.ri-linkedin-line:before {
+  content: "\eeb6"
+}
+
+.ri-live-line:before {
+  content: "\eec0"
+}
+
+.ri-mail-line:before {
+  content: "\eef6"
+}
+
+.ri-mail-open-line:before {
+  content: "\eefa"
+}
+
+.ri-mail-send-line:before {
+  content: "\eefc"
+}
+
+.ri-more-2-line:before {
+  content: "\ef77"
+}
+
+.ri-more-line:before {
+  content: "\ef79"
+}
+
+.ri-paint-brush-line:before {
+  content: "\efc1"
+}
+
+.ri-paint-line:before {
+  content: "\efc3"
+}
+
+.ri-phone-find-line:before {
+  content: "\efeb"
+}
+
+.ri-phone-line:before {
+  content: "\efec"
+}
+
+.ri-price-tag-2-line:before {
+  content: "\f021"
+}
+
+.ri-price-tag-3-line:before {
+  content: "\f023"
+}
+
+.ri-price-tag-line:before {
+  content: "\f025"
+}
+
+.ri-question-line:before {
+  content: "\f045"
+}
+
+.ri-reactjs-line:before {
+  content: "\f058"
+}
+
+.ri-remixicon-line:before {
+  content: "\f06c"
+}
+
+.ri-reserved-line:before {
+  content: "\f07c"
+}
+
+.ri-router-line:before {
+  content: "\f09d"
+}
+
+.ri-send-to-back:before {
+  content: "\f0db"
+}
+
+.ri-store-2-line:before {
+  content: "\f1a5"
+}
+
+.ri-store-3-line:before {
+  content: "\f1a7"
+}
+
+.ri-store-line:before {
+  content: "\f1a9"
+}
+
+.ri-t-box-line:before {
+  content: "\f1d3"
+}
+
+.ri-team-line:before {
+  content: "\f1ee"
+}
+
+.ri-text-wrap:before {
+  content: "\f200"
+}
+
+.ri-text:before {
+  content: "\f201"
+}
+
+.ri-time-line:before {
+  content: "\f20f"
+}
+
+.ri-timer-2-line:before {
+  content: "\f211"
+}
+
+.ri-timer-line:before {
+  content: "\f215"
+}
+
+.ri-todo-line:before {
+  content: "\f217"
+}
+
+.ri-toggle-line:before {
+  content: "\f219"
+}
+
+.ri-twitter-line:before {
+  content: "\f23b"
+}
+
+.ri-window-2-line:before {
+  content: "\f2c4"
+}
+
+.ri-window-line:before {
+  content: "\f2c6"
+}
+
+.ri-youtube-line:before {
+  content: "\f2d5"
+}

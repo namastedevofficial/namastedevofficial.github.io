@@ -1,0 +1,144 @@
+@font-face {
+  font-display: block;
+  font-family: bootstrap-icons;
+  src: url(https://namastedev.com/namaste-react/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf) format("woff2"), url(https://namastedev.com/namaste-react/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff?8d200481aa7f02a2d63a331fc782cfaf) format("woff")
+}
+
+.bi::before,
+[class*=" bi-"]::before,
+[class^=bi-]::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.bi-arrow-up-short::before {
+  content: "\f145"
+}
+
+.bi-linkedin::before {
+  content: "\f472"
+}
+
+.bi-list-ul::before {
+  content: "\f478"
+}
+
+.bi-list::before {
+  content: "\f479"
+}
+
+.bi-phone::before {
+  content: "\f4e7"
+}
+
+.bi-question::before {
+  content: "\f50c"
+}
+
+.bi-tag::before {
+  content: "\f5b0"
+}
+
+.bi-text-center::before {
+  content: "\f5c4"
+}
+
+.bi-text-left::before {
+  content: "\f5c7"
+}
+
+.bi-text-right::before {
+  content: "\f5c9"
+}
+
+.bi-toggle-on::before {
+  content: "\f5d6"
+}
+
+.bi-toggle2-on::before {
+  content: "\f5d8"
+}
+
+.bi-twitter::before {
+  content: "\f5ef"
+}
+
+.bi-watch::before {
+  content: "\f616"
+}
+
+.bi-window::before {
+  content: "\f620"
+}
+
+.bi-x::before {
+  content: "\f62a"
+}
+
+.bi-youtube::before {
+  content: "\f62b"
+}
+
+.bi-info-lg::before {
+  content: "\f646"
+}
+
+.bi-question-lg::before {
+  content: "\f64e"
+}
+
+.bi-x-lg::before {
+  content: "\f659"
+}
+
+.bi-line::before {
+  content: "\f660"
+}
+
+.bi-fan::before {
+  content: "\f670"
+}
+
+.bi-fingerprint::before {
+  content: "\f671"
+}
+
+.bi-body-text::before {
+  content: "\f683"
+}
+
+.bi-meta::before {
+  content: "\f6a1"
+}
+
+.bi-quote::before {
+  content: "\f6b0"
+}
+
+.bi-send-x::before {
+  content: "\f6bf"
+}
+
+.bi-send::before {
+  content: "\f6c0"
+}
+
+.bi-window-x::before {
+  content: "\f6d3"
+}
+
+.bi-router::before {
+  content: "\f6ec"
+}
+
+.bi-box2::before {
+  content: "\f70d"
+}

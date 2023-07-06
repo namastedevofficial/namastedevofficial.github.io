@@ -1,0 +1,21 @@
+.bx {
+    font-family: boxicons !important;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+    text-transform: none;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.bxs-quote-alt-left:before {
+    content: "\ee81"
+}
+
+.bxs-quote-alt-right:before {
+    content: "\ee82"
+}
