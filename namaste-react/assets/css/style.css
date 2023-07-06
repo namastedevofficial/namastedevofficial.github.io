@@ -1679,3 +1679,100 @@ section {
 #footer .footer-links a:hover {
   color: #3498db;
 }
+/* ---------------------------------------------------------------  */
+/* NOTIFICATION */
+.notifications {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.notifications :where(.myToast, .toastText) {
+  display: flex;
+  align-items: center;
+}
+
+/* Toast ka dabba */
+.notifications .myToast {
+  width: 300px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  border-radius: 4px;
+  padding: 16px 17px;
+  margin-bottom: 10px;
+  background: #34495E;
+  color: white;
+  animation: show_toast 0.3s ease backwards;
+}
+
+@keyframes show_toast {
+  0% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(5%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+.notifications .myToast.hide {
+  animation: hide_toast 0.3s ease forwards;
+}
+
+@keyframes hide_toast {
+  0% {
+    transform: translateX(10px);
+  }
+  40% {
+    transform: translateX(0%);
+  }
+  80% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
+
+.myToast::before {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+  100% {
+    width: 0%;
+  }
+}
+.myToast.success::before{
+  background: #0ABF30;
+}
+
+/* myToast ke andar */
+.myToast .toastText span {
+  font-size: 1.07rem;
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 530px) {
+  .notifications {
+    width: 75%;
+  }
+  .notifications .myToast {
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 20px;
+  }
+}
