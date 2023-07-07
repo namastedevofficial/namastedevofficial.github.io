@@ -353,7 +353,7 @@
     const randomName = names[Math.floor(Math.random() * names.length)];
 
     const displayText = `${randomName} enrolled in 'Namaste React WebSeries', ${Math.floor(
-      Math.random() * 60
+      Math.random() * 30
     )} mins ago.`;
 
     // myToast ko class 2 classess diye
