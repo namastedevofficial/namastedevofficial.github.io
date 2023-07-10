@@ -1766,6 +1766,27 @@ section {
   margin-left: 12px;
 }
 
+/* -------------------------------------------------- */
+/* ANDROID APP  */
+.android-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+.android-logo {
+  margin-top: -10px;
+  margin-bottom: -40px;
+  transition: all 0.1s;
+}
+
+.android-logo:hover {
+  transform: scale(1.1);
+}
+
+
 @media screen and (max-width: 530px) {
   .notifications {
     width: 75%;
