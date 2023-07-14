@@ -50,7 +50,7 @@ canvas {
 .child {
   margin: 0px 0 0 0;
   position: absolute;
-  top: 55%;
+  top: 50%;
   text-align: center;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -95,7 +95,8 @@ canvas {
 }
 
 .email-form {
-  margin: 120px auto 0 auto;
+  /* margin: 120px auto 0 auto; */
+  margin-top: 10px;
   width:100%;
 }
 
@@ -275,21 +276,65 @@ a {
   text-decoration-color: #32B501;
 }
 
-.android-app {
+.perks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   opacity: 0.9;
   color: #fff;
   font-size: 20px;
   font-family: 'OratorStd';
+  margin-top: -30px;
 }
 
-.android-logo {
-  margin-top: -25px;
-  margin-bottom: -50px;
-  transition: all 0.1s;
+
+.android-btn{
+  width:200px;
+  height:60px;
+  border:none;
+  background-color:#ddd;
+  outline:none;
+  cursor:pointer;
+  transition:background-color 0.2s;
 }
 
-.android-logo:hover {
-  transform: scale(1.1);
+.btn__logo{
+  width:30px;
+  height:30px;
+  float:left;
+  
+  margin: 10px 0 14px 20px;
+  position:relative;
+}
+
+.btn__content{
+  width: 110px;
+  height:28px;
+  font-size:12px;
+  float:right;
+  margin-right:15px;
+  text-align:left;
+}
+
+.btn__content--big{
+  height:22px;
+  font-size:22px;
+  margin-top:7.5px;
+}
+
+.btn--android{
+  background-color:#a2c437;
+  color:#fff; 
+}
+
+.btn--android:hover{
+  background-color: #6e9000;
+  color:#fff; 
+}
+
+.btn--radius{
+  border-radius:30px;
 }
 
 
