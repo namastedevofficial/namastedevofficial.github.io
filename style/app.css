@@ -57,10 +57,9 @@ canvas {
 }
 
 .coming-soon {
-  opacity: 0.9;
   color: #fff;
   font-size: 20px;
-  font-family: 'OratorStd';
+  font-family: auto;
 }
 
 .thank-you {
@@ -273,7 +272,7 @@ input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input
 a {
   color: white;
   text-decoration: underline;
-  text-decoration-color: #32B501;
+  text-decoration-color: gray;
 }
 
 .perks {
