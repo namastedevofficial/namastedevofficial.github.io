@@ -981,14 +981,18 @@
       }
 
       const searchParams = new URLSearchParams(window.location.search);
+      isVersion2 = searchParams.get("version") == 2;
+      isVersion2 &&
+        gtag("event", "unlock_achievement", {
+          achievement_id: "student_platform_visit",
+        });
 
       function clickHandler() {
         gtag_report_conversion();
 
-        window.location.href =
-          searchParams.get("version") == 2
-            ? "https://namastedev.com/learn/namaste-react"
-            : "https://courses.namastedev.com/learn/Namaste-React";
+        window.location.href = isVersion2
+          ? "https://namastedev.com/learn/namaste-react"
+          : "https://courses.namastedev.com/learn/Namaste-React";
       }
     </script>
   </body>
