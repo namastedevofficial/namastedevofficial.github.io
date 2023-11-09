@@ -88,7 +88,7 @@
             <li>
               <a
                 class="getstarted scrollto"
-                href="https://courses.namastedev.com/learn/Namaste-React"
+                onclick="clickHandler()"
                 style="cursor: pointer"
                 >Enroll Now</a
               >
@@ -133,10 +133,10 @@
 
             <div data-aos="fade-up" data-aos-delay="800">
               <a
-                href="https://courses.namastedev.com/learn/Namaste-React"
+                onclick="clickHandler()"
                 style="cursor: pointer"
                 class="btn-get-started scrollto"
-                >Get Started</a
+                >Start Learning</a
               >
             </div>
           </div>
@@ -979,10 +979,16 @@
         });
         return false;
       }
+
+      const searchParams = new URLSearchParams(window.location.search);
+
       function clickHandler() {
         gtag_report_conversion();
+
         window.location.href =
-          "https://courses.namastedev.com/learn/Namaste-React";
+          searchParams.get("version") == 2
+            ? "https://namastedev.com/learn/namaste-react"
+            : "https://courses.namastedev.com/learn/Namaste-React";
       }
     </script>
   </body>
