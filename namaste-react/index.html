@@ -990,9 +990,10 @@
       function clickHandler() {
         gtag_report_conversion();
 
-        window.location.href = isVersion2
-          ? "https://namastedev.com/learn/namaste-react"
-          : "https://courses.namastedev.com/learn/Namaste-React";
+        window.location.href = "https://namastedev.com/learn/namaste-react";
+        // searchParams.get("version") == 2
+        //   ? "https://namastedev.com/learn/namaste-react"
+        //   : "https://courses.namastedev.com/learn/Namaste-React";
       }
     </script>
   </body>
